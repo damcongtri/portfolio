@@ -1,0 +1,85 @@
+.banner {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 40px 0;
+
+    * {
+        transition: 0.2s ease-out !important;
+    }
+
+    h2 {
+        font-size: 72px;
+    }
+
+    p {
+        padding: 12px 0;
+        margin-bottom: 6px;
+        font-size: x-large;
+        font-weight: 400;
+    }
+
+    .contact {
+        width: 160px;
+        height: 46px;
+        display: inline-block;
+        border-radius: 40px;
+        position: relative;
+        overflow: hidden;
+        background-color: var(--text-color);
+        cursor: pointer;
+
+        &::before {
+            position: absolute;
+            content: "";
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: var(--main-color);
+            transition: ease-out 0.3s;
+
+
+        }
+
+        &:hover::before {
+            transform: translateY(-120%);
+        }
+
+        &:hover span {
+            color: var(--r-text-color);
+            transition: 0;
+        }
+
+        span {
+            top: 50%;
+            left: 50%;
+            width: 100%;
+            text-align: center;
+            transform: translate(-50%, -50%);
+            position: absolute;
+            font-size: medium;
+            font-weight: 400;
+            color: #fff;
+        }
+    }
+
+    .text {
+        @media screen and (max-width:991px) {
+            text-align: center;
+        }
+    }
+
+    .avatar {
+        text-align: center;
+
+        img {
+            max-width: 300px;
+
+            @media screen and (max-width:1024px) {
+                max-width: 200px;
+                // max-height: 200px;
+            }
+        }
+    }
+
+}

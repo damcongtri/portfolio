@@ -1,0 +1,15 @@
+.brand {
+    margin-top: 50px;
+    background-color: var(--bg-color-brand);
+    border-radius: 20px;
+    padding: 40px 10px;
+
+    img {
+        width: 100%;
+        opacity: 0.8;
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+}

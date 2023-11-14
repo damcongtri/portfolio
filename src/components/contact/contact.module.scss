@@ -1,0 +1,139 @@
+.contact {
+    :global {
+        ::placeholder {
+            color: var(--text-color);
+            opacity: 0.8;
+            /* Firefox */
+        }
+    }
+}
+
+.contact {
+    padding: 40px 0;
+
+    .head {
+        text-align: center;
+        padding: 20px 0;
+
+        h3 {
+            font-size: 21px;
+            font-weight: 500;
+            color: var(--main-color);
+        }
+
+        h1 {
+            padding: 20px 0;
+        }
+    }
+
+    .content {
+
+
+
+        .info {
+            margin-top: -10px;
+            margin-bottom: 60px;
+
+            .item {
+                display: flex;
+                align-items: center;
+                margin: 10px 0;
+
+                &>span {
+                    font-size: 30px;
+                    background-color: var(--main-color);
+                    width: 80px;
+                    text-align: center;
+                    height: 80px;
+                    line-height: 80px;
+                    border-radius: 50%;
+                    color: #fff;
+                    margin-right: 20px;
+                }
+
+                h3 {
+                    font-size: x-large;
+                    margin-bottom: 4px;
+                }
+
+                p {
+                    font-size: larger;
+                    line-height: unset;
+                    opacity: 0.8;
+                }
+            }
+        }
+
+        .form {
+
+            :global {
+                .ant-form-item-control-input-content {
+
+                    &>*:hover {
+                        border-color: var(--text-color);
+                    }
+
+                    &>*:focus {
+                        border-color: var(--text-color);
+                        box-shadow: unset;
+                    }
+
+                    &>input,
+                    &>textarea {
+                        width: 100%;
+                        background-color: transparent;
+                        color: var(--text-color);
+                        letter-spacing: 1.1px;
+                    }
+                }
+            }
+
+            .submit {
+                margin-top: 20px;
+                width: 160px;
+                height: 46px;
+                display: inline-block;
+                border-radius: 40px;
+                position: relative;
+                overflow: hidden;
+                background-color: var(--text-color);
+                cursor: pointer;
+
+                &::before {
+                    position: absolute;
+                    content: "";
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    background-color: var(--main-color);
+                    transition: ease-out 0.3s;
+
+
+                }
+
+                &:hover::before {
+                    transform: translateY(-120%);
+                }
+
+                &:hover span {
+                    color: var(--r-text-color);
+                    transition: 0;
+                }
+
+                span {
+                    top: 50%;
+                    left: 50%;
+                    width: 100%;
+                    text-align: center;
+                    transform: translate(-50%, -50%);
+                    position: absolute;
+                    font-size: medium;
+                    font-weight: 400;
+                    color: #fff;
+                }
+            }
+        }
+    }
+
+}

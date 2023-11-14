@@ -1,0 +1,16 @@
+{
+    "nav": {
+        "home": "Trang chủ",
+        "about": "Giới thiệu",
+        "service": "Dịch vụ",
+        "portfolio": "Sản phẩm",
+        "contact": "Liên hệ",
+        "theme": {
+            "dark": "Tối",
+            "light": "Sáng"
+        }
+    },
+    "banner": {
+        "contact": "Lấy Liên hệ"
+    }
+}
