@@ -1,6 +1,7 @@
 import classNames from "classnames/bind";
 import style from "./product.module.scss"
 import { Col, Row } from "antd";
+import { Link } from "react-router-dom";
 const cx = classNames.bind(style)
 function Product() {
     return (
@@ -21,40 +22,51 @@ function Product() {
                     <div className={cx('list')}>
                         <Row gutter={[16, 16]}>
                             <Col lg={8} sm={12} span={24}>
-                                <div className={cx('item')} style={{ backgroundImage: 'url(https://marketifythemes.net/html/foliox/img/portfolio/1.jpg)' }}>
 
-                                    <div className={cx('title')}>
-                                        <h3>Ecommeces</h3>
-                                        <span>ExpressJS, ReactJS</span>
+                                <Link to={'/product-detail'}>
+                                    <div className={cx('item')} style={{ backgroundImage: 'url(https://marketifythemes.net/html/foliox/img/portfolio/1.jpg)' }}>
+
+                                        <div className={cx('title')}>
+                                            <h3>Ecommeces</h3>
+                                            <span>ExpressJS, ReactJS</span>
+                                        </div>
                                     </div>
-                                </div>
+                                </Link>
                             </Col>
                             <Col lg={8} sm={12} span={24}>
-                                <div className={cx('item')} style={{ backgroundImage: 'url(https://marketifythemes.net/html/foliox/img/portfolio/1.jpg)' }}>
+                                <Link to={'/product-detail'}>
 
-                                    <div className={cx('title')}>
-                                        <h3>Ecommeces</h3>
-                                        <span>ExpressJS, ReactJS</span>
+                                    <div className={cx('item')} style={{ backgroundImage: 'url(https://marketifythemes.net/html/foliox/img/portfolio/1.jpg)' }}>
+                                        <div className={cx('title')}>
+                                            <h3>Ecommeces</h3>
+                                            <span>ExpressJS, ReactJS</span>
+                                        </div>
                                     </div>
-                                </div>
+                                </Link>
                             </Col>
                             <Col lg={8} sm={12} span={24}>
-                                <div className={cx('item')} style={{ backgroundImage: 'url(https://marketifythemes.net/html/foliox/img/portfolio/1.jpg)' }}>
+                                <Link to={'/product-detail'}>
 
-                                    <div className={cx('title')}>
-                                        <h3>Ecommeces</h3>
-                                        <span>ExpressJS, ReactJS</span>
+                                    <div className={cx('item')} style={{ backgroundImage: 'url(https://marketifythemes.net/html/foliox/img/portfolio/1.jpg)' }}>
+
+                                        <div className={cx('title')}>
+                                            <h3>Ecommeces</h3>
+                                            <span>ExpressJS, ReactJS</span>
+                                        </div>
                                     </div>
-                                </div>
+                                </Link>
                             </Col>
                             <Col lg={8} sm={12} span={24}>
-                                <div className={cx('item')} style={{ backgroundImage: 'url(https://marketifythemes.net/html/foliox/img/portfolio/1.jpg)' }}>
+                                <Link to={'/product-detail'}>
 
-                                    <div className={cx('title')}>
-                                        <h3>Ecommeces</h3>
-                                        <span>ExpressJS, ReactJS</span>
+                                    <div className={cx('item')} style={{ backgroundImage: 'url(https://marketifythemes.net/html/foliox/img/portfolio/1.jpg)' }}>
+
+                                        <div className={cx('title')}>
+                                            <h3>Ecommeces</h3>
+                                            <span>ExpressJS, ReactJS</span>
+                                        </div>
                                     </div>
-                                </div>
+                                </Link>
                             </Col>
                         </Row>
                     </div>

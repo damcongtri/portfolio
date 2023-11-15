@@ -3,7 +3,7 @@ import ProductDetail from "../pages/productDetail";
 
 const routers = [
     { path: '/', element: Home },
-    { path: '/product', element: ProductDetail }
+    { path: '/product-detail', element: ProductDetail }
 ]
 
 export default routers
